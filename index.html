@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <title>VC Agent Portal</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="#" class="brand">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            style="enable-background: new 0 0 613.07 246.08"
+            viewBox="0 0 613.07 246.08"
+          >
+            <path
+              d="M312.55 115.78 287.1 42.45h13.19l19.49 58.77 19.59-58.77h13.09L327 115.78zM375.61 106.35c4.71 0 8.69-1.57 11.84-4.71 3.14-3.25 4.71-7.23 4.71-12.05s-1.57-8.8-4.71-11.94c-3.14-3.25-7.12-4.82-11.84-4.82s-8.7 1.57-11.84 4.82c-3.14 3.14-4.71 7.12-4.71 11.94 0 4.82 1.57 8.8 4.71 12.05 3.14 3.14 7.12 4.71 11.84 4.71m16.55-42.94h11.31v52.38h-11.31v-7.54c-4.29 5.97-10.37 8.9-18.33 8.9-7.23 0-13.3-2.62-18.44-7.96-5.13-5.34-7.65-11.94-7.65-19.59 0-7.75 2.51-14.25 7.65-19.59 5.13-5.34 11.21-7.96 18.44-7.96 7.96 0 14.04 2.93 18.33 8.8v-7.44zM425.36 72.21c2.83-6.49 8.27-9.74 16.13-9.74v12.26c-4.3-.31-8.07.73-11.31 3.14-3.25 2.3-4.82 6.18-4.82 11.52v26.4h-11.31V63.41h11.31v8.8zM447.25 63.41h11.31v52.37h-11.31V63.41zm.53-9.96c-2.83-2.93-2.83-7.33 0-10.16a7.098 7.098 0 0 1 10.27 0c2.83 2.83 2.83 7.23-.1 10.16-2.84 2.83-7.24 2.83-10.17 0M508.64 85.19c-1.57-8.48-7.54-12.88-14.98-12.88-8.38 0-14.25 4.92-15.82 12.88h30.8zm-30.7 9.22c1.67 7.96 8.07 12.36 16.76 12.36 5.97 0 10.47-2.2 13.51-6.49l9.32 5.45c-5.13 7.65-12.78 11.42-22.94 11.42-8.48 0-15.4-2.62-20.63-7.75-5.24-5.24-7.86-11.84-7.86-19.8 0-7.86 2.62-14.35 7.75-19.59 5.13-5.34 11.84-7.96 19.9-7.96 7.65 0 13.93 2.72 18.86 8.06 4.92 5.34 7.44 11.94 7.44 19.59 0 1.15-.1 2.72-.42 4.71h-41.69zM554.93 74.3h-12.99v25.14c0 6.7 4.4 6.6 12.99 6.18v10.16c-17.28 2.1-24.3-2.62-24.3-16.34V74.3H521V63.4h9.64V52.09l11.31-3.35V63.4h12.99v10.9zM598.93 63.41h12.05l-20.11 54.05c-5.03 13.51-13.51 20.01-25.56 19.27v-10.58c7.12.42 11.1-3.04 13.93-10.27l.53-1.05-22.21-51.43h12.36l15.61 38.03 13.4-38.02zM296.21 194.09c-7.23-7.33-10.89-16.34-10.89-27.13s3.67-19.8 10.89-27.02c7.23-7.33 16.45-11 27.44-11 13.3 0 25.25 6.7 31.53 17.49l-10.47 6.08c-3.88-7.23-11.84-11.84-21.06-11.84-7.86 0-14.14 2.51-19.06 7.44-4.82 4.92-7.23 11.21-7.23 18.86 0 7.65 2.41 13.93 7.23 18.86 4.92 4.92 11.21 7.44 19.06 7.44 9.22 0 17.28-4.61 21.06-11.84l10.47 5.97c-3.04 5.34-7.44 9.64-13.09 12.88-5.55 3.14-11.73 4.71-18.44 4.71-11-.01-20.22-3.67-27.44-10.9M373.61 160.05c2.83-6.49 8.27-9.74 16.13-9.74v12.25c-4.3-.31-8.07.73-11.31 3.14-3.25 2.31-4.82 6.18-4.82 11.52v26.4H362.3v-52.38h11.31v8.81zM430.81 151.25h11.31v52.38h-11.31v-6.7c-3.46 5.34-8.8 8.06-16.24 8.06-12.04 0-20.11-8.17-20.11-21.58v-32.16h11.31v31.01c0 7.86 4.5 12.15 11.73 12.15 7.96 0 13.3-4.92 13.3-15.09v-28.07zM452.7 151.24h11.31v52.38H452.7v-52.38zm.52-9.95c-2.83-2.93-2.83-7.33 0-10.16a7.098 7.098 0 0 1 10.27 0c2.83 2.83 2.83 7.23-.11 10.16-2.82 2.83-7.22 2.83-10.16 0M494.18 172.51c8.07 1.78 18.54 5.13 18.33 16.34 0 5.03-1.99 9.01-5.87 11.84s-8.69 4.29-14.56 4.29c-10.37 0-18.02-4.61-21.37-12.26l9.74-5.66c1.78 5.03 5.65 7.54 11.63 7.54s8.9-1.99 8.9-5.86c0-3.35-4.4-5.34-9.95-6.7-7.86-1.99-18.44-5.13-18.23-16.13 0-4.82 1.78-8.7 5.45-11.63 3.67-2.93 8.27-4.4 13.72-4.4 8.69 0 15.71 4.09 19.38 10.89l-9.53 5.34c-1.78-3.98-5.13-5.97-9.85-5.97-4.3 0-7.65 1.89-7.65 5.55.01 3.47 4.41 5.25 9.86 6.82M558.08 173.03c-1.57-8.48-7.54-12.88-14.98-12.88-8.38 0-14.25 4.92-15.82 12.88h30.8zm-30.69 9.22c1.67 7.96 8.07 12.36 16.76 12.36 5.97 0 10.47-2.2 13.51-6.49l9.32 5.45c-5.13 7.65-12.78 11.42-22.94 11.42-8.49 0-15.4-2.62-20.64-7.75-5.24-5.24-7.86-11.83-7.86-19.8 0-7.86 2.62-14.35 7.75-19.59 5.13-5.34 11.84-7.96 19.9-7.96 7.65 0 13.93 2.72 18.86 8.06 4.92 5.34 7.44 11.94 7.44 19.59 0 1.15-.1 2.72-.42 4.72h-41.68zM594.74 172.51c8.07 1.78 18.54 5.13 18.33 16.34 0 5.03-1.99 9.01-5.87 11.84s-8.69 4.29-14.56 4.29c-10.37 0-18.02-4.61-21.37-12.26l9.74-5.66c1.78 5.03 5.66 7.54 11.63 7.54s8.9-1.99 8.9-5.86c0-3.35-4.4-5.34-9.95-6.7-7.86-1.99-18.44-5.13-18.23-16.13 0-4.82 1.78-8.7 5.45-11.63 3.67-2.93 8.27-4.4 13.72-4.4 8.69 0 15.71 4.09 19.38 10.89l-9.53 5.34c-1.78-3.98-5.13-5.97-9.85-5.97-4.3 0-7.65 1.89-7.65 5.55.01 3.47 4.41 5.25 9.86 6.82"
+              class="st_logo letter"
+            />
+            <path
+              d="M14.87 123.04c0-36.82 18.51-69.39 46.71-88.94l52.77 196.76c-55.61-4.49-99.48-51.13-99.48-107.82m156.58-96.81-48.29 180.06-48.3-180.06c14.55-7.27 30.95-11.38 48.29-11.38s33.75 4.11 48.3 11.38m-39.49 204.63L184.73 34.1c26.29 18.22 44.15 47.76 46.45 81.51h14.9C242.22 51.21 188.57 0 123.16 0 55.25 0 0 55.19 0 123.04c0 67.84 55.25 123.04 123.16 123.04 65.41 0 119.07-51.21 122.93-115.61h-14.9c-3.65 53.29-46.07 96.1-99.23 100.39"
+              class="st_logo"
+            />
+          </svg>
+        </a>
+        <div class="burger" id="burger">
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+          <span class="burger-line"></span>
+        </div>
+        <div class="menu" id="menu">
+          <ul class="menu-inner">
+            <li class="menu-item">
+              <a href="#home" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+              <a href="#how" class="menu-link">How it Works</a>
+            </li>
+            <li class="menu-item">
+              <a href="#access" class="menu-link">Get Access</a>
+            </li>
+          </ul>
+        </div>
+        <a
+          href="https://booking.varietycruises.com/RescoWeb/ResWebBookingAgentJs/login"
+          class="menu-block"
+          >Log In</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section class="home" id="home">
+        <div class="container">
+          <!-- <svg
+            class="background--custom"
+            id="demo"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <path
+              fill="#008FFF"
+              fill-opacity="0.7"
+              d="M-100 -100L200 -100L200 50L-100 50Z"
+              style="animation: path0 10s linear infinite alternate"
+            />
+            <path
+              fill="#5CB8FF"
+              fill-opacity="0.1"
+              d="M-100 -100L200 -100L200 60L-100 60Z"
+              style="
+                animation: path1 12.820512820512821s linear infinite alternate;
+              "
+            />
+            <path
+              fill="#005CA3"
+              fill-opacity="0.3"
+              d="M-100 -100L200 -100L200 60L-100 60Z"
+              style="
+                animation: path2 8.064516129032258s linear infinite alternate;
+              "
+            />
+          </svg> -->
+          <div class="container-hero grid grid--2-cols">
+            <div class="text-box">
+              <h1 class="heading-primary">Booking Portal for Agents</h1>
+              <p class="step-description">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus, expedita consectetur beatae adipisci ab nihil velit,
+                aliquid ea nam temporibus quam
+              </p>
+              <a href="#access" class="menu-block block-blue">Get Access</a>
+              <a href="#how" class="menu-block block-blue--outline"
+                >Learn More</a
+              >
+            </div>
+            <div class="image-box">
+              <img class="hero-img" src="agentbkg2.png" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Make optional bookings in 3 easy steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">Filter cruises and dates</h3>
+            <p class="step-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              iure maxime, minus repellendus distinctio reprehenderit. Expedita
+              velit sit laudantium enim repudiandae totam! Ipsam aspernatur
+              voluptatem doloribus, quis sequi vero nulla.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="filter-cruises.png"
+              class="step-img"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+
+          <!-- step 02 -->
+          <div class="step-img-box">
+            <img
+              src="select-cabin.png"
+              class="step-img"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Select cabin category</h3>
+            <p class="step-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              iure maxime, minus repellendus distinctio reprehenderit. Expedita
+              velit sit laudantium enim repudiandae totam! Ipsam aspernatur
+              voluptatem doloribus, quis sequi vero nulla.
+            </p>
+          </div>
+          <!-- step 03 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Add guest info and confirm</h3>
+            <p class="step-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              iure maxime, minus repellendus distinctio reprehenderit. Expedita
+              velit sit laudantium enim repudiandae totam! Ipsam aspernatur
+              voluptatem doloribus, quis sequi vero nulla.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img src="confirm.png" class="step-img" alt="" loading="lazy" />
+          </div>
+        </div>
+      </section>
+      <section class="section-access" id="access">
+        <div class="container">
+          <span class="subheading">Get Access</span>
+          <h2 class="heading-tertiary">Contact Sales Departemnt</h2>
+          <div class="grid grid--2-cols">
+            <div class="step-text-box">
+              <p class="step-description">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat
+                magnam unde vel, beatae assumenda possimus quis ad perspiciatis
+              </p>
+              <p class="step-description">
+                In order to aquire access get in touch with our sales team:
+              </p>
+              <h3 class="subheading">sales@varietycruises.com</h3>
+
+              <p class="step-description">Follow us</p>
+              <ul class="social-links">
+                <li>
+                  <a class="footer-link" href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-instagram"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-facebook"
+                    ></ion-icon
+                  ></a>
+                </li>
+                <li>
+                  <a class="footer-link" href="#"
+                    ><ion-icon
+                      class="social-icon"
+                      name="logo-twitter"
+                    ></ion-icon
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <div class="step-img-box">
+              <img src="salesteam.png" class="step-img" alt="" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#" class="brand-footer">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xml:space="preserve"
+          style="enable-background: new 0 0 613.07 246.08"
+          viewBox="0 0 613.07 246.08"
+        >
+          <path
+            d="M312.55 115.78 287.1 42.45h13.19l19.49 58.77 19.59-58.77h13.09L327 115.78zM375.61 106.35c4.71 0 8.69-1.57 11.84-4.71 3.14-3.25 4.71-7.23 4.71-12.05s-1.57-8.8-4.71-11.94c-3.14-3.25-7.12-4.82-11.84-4.82s-8.7 1.57-11.84 4.82c-3.14 3.14-4.71 7.12-4.71 11.94 0 4.82 1.57 8.8 4.71 12.05 3.14 3.14 7.12 4.71 11.84 4.71m16.55-42.94h11.31v52.38h-11.31v-7.54c-4.29 5.97-10.37 8.9-18.33 8.9-7.23 0-13.3-2.62-18.44-7.96-5.13-5.34-7.65-11.94-7.65-19.59 0-7.75 2.51-14.25 7.65-19.59 5.13-5.34 11.21-7.96 18.44-7.96 7.96 0 14.04 2.93 18.33 8.8v-7.44zM425.36 72.21c2.83-6.49 8.27-9.74 16.13-9.74v12.26c-4.3-.31-8.07.73-11.31 3.14-3.25 2.3-4.82 6.18-4.82 11.52v26.4h-11.31V63.41h11.31v8.8zM447.25 63.41h11.31v52.37h-11.31V63.41zm.53-9.96c-2.83-2.93-2.83-7.33 0-10.16a7.098 7.098 0 0 1 10.27 0c2.83 2.83 2.83 7.23-.1 10.16-2.84 2.83-7.24 2.83-10.17 0M508.64 85.19c-1.57-8.48-7.54-12.88-14.98-12.88-8.38 0-14.25 4.92-15.82 12.88h30.8zm-30.7 9.22c1.67 7.96 8.07 12.36 16.76 12.36 5.97 0 10.47-2.2 13.51-6.49l9.32 5.45c-5.13 7.65-12.78 11.42-22.94 11.42-8.48 0-15.4-2.62-20.63-7.75-5.24-5.24-7.86-11.84-7.86-19.8 0-7.86 2.62-14.35 7.75-19.59 5.13-5.34 11.84-7.96 19.9-7.96 7.65 0 13.93 2.72 18.86 8.06 4.92 5.34 7.44 11.94 7.44 19.59 0 1.15-.1 2.72-.42 4.71h-41.69zM554.93 74.3h-12.99v25.14c0 6.7 4.4 6.6 12.99 6.18v10.16c-17.28 2.1-24.3-2.62-24.3-16.34V74.3H521V63.4h9.64V52.09l11.31-3.35V63.4h12.99v10.9zM598.93 63.41h12.05l-20.11 54.05c-5.03 13.51-13.51 20.01-25.56 19.27v-10.58c7.12.42 11.1-3.04 13.93-10.27l.53-1.05-22.21-51.43h12.36l15.61 38.03 13.4-38.02zM296.21 194.09c-7.23-7.33-10.89-16.34-10.89-27.13s3.67-19.8 10.89-27.02c7.23-7.33 16.45-11 27.44-11 13.3 0 25.25 6.7 31.53 17.49l-10.47 6.08c-3.88-7.23-11.84-11.84-21.06-11.84-7.86 0-14.14 2.51-19.06 7.44-4.82 4.92-7.23 11.21-7.23 18.86 0 7.65 2.41 13.93 7.23 18.86 4.92 4.92 11.21 7.44 19.06 7.44 9.22 0 17.28-4.61 21.06-11.84l10.47 5.97c-3.04 5.34-7.44 9.64-13.09 12.88-5.55 3.14-11.73 4.71-18.44 4.71-11-.01-20.22-3.67-27.44-10.9M373.61 160.05c2.83-6.49 8.27-9.74 16.13-9.74v12.25c-4.3-.31-8.07.73-11.31 3.14-3.25 2.31-4.82 6.18-4.82 11.52v26.4H362.3v-52.38h11.31v8.81zM430.81 151.25h11.31v52.38h-11.31v-6.7c-3.46 5.34-8.8 8.06-16.24 8.06-12.04 0-20.11-8.17-20.11-21.58v-32.16h11.31v31.01c0 7.86 4.5 12.15 11.73 12.15 7.96 0 13.3-4.92 13.3-15.09v-28.07zM452.7 151.24h11.31v52.38H452.7v-52.38zm.52-9.95c-2.83-2.93-2.83-7.33 0-10.16a7.098 7.098 0 0 1 10.27 0c2.83 2.83 2.83 7.23-.11 10.16-2.82 2.83-7.22 2.83-10.16 0M494.18 172.51c8.07 1.78 18.54 5.13 18.33 16.34 0 5.03-1.99 9.01-5.87 11.84s-8.69 4.29-14.56 4.29c-10.37 0-18.02-4.61-21.37-12.26l9.74-5.66c1.78 5.03 5.65 7.54 11.63 7.54s8.9-1.99 8.9-5.86c0-3.35-4.4-5.34-9.95-6.7-7.86-1.99-18.44-5.13-18.23-16.13 0-4.82 1.78-8.7 5.45-11.63 3.67-2.93 8.27-4.4 13.72-4.4 8.69 0 15.71 4.09 19.38 10.89l-9.53 5.34c-1.78-3.98-5.13-5.97-9.85-5.97-4.3 0-7.65 1.89-7.65 5.55.01 3.47 4.41 5.25 9.86 6.82M558.08 173.03c-1.57-8.48-7.54-12.88-14.98-12.88-8.38 0-14.25 4.92-15.82 12.88h30.8zm-30.69 9.22c1.67 7.96 8.07 12.36 16.76 12.36 5.97 0 10.47-2.2 13.51-6.49l9.32 5.45c-5.13 7.65-12.78 11.42-22.94 11.42-8.49 0-15.4-2.62-20.64-7.75-5.24-5.24-7.86-11.83-7.86-19.8 0-7.86 2.62-14.35 7.75-19.59 5.13-5.34 11.84-7.96 19.9-7.96 7.65 0 13.93 2.72 18.86 8.06 4.92 5.34 7.44 11.94 7.44 19.59 0 1.15-.1 2.72-.42 4.72h-41.68zM594.74 172.51c8.07 1.78 18.54 5.13 18.33 16.34 0 5.03-1.99 9.01-5.87 11.84s-8.69 4.29-14.56 4.29c-10.37 0-18.02-4.61-21.37-12.26l9.74-5.66c1.78 5.03 5.66 7.54 11.63 7.54s8.9-1.99 8.9-5.86c0-3.35-4.4-5.34-9.95-6.7-7.86-1.99-18.44-5.13-18.23-16.13 0-4.82 1.78-8.7 5.45-11.63 3.67-2.93 8.27-4.4 13.72-4.4 8.69 0 15.71 4.09 19.38 10.89l-9.53 5.34c-1.78-3.98-5.13-5.97-9.85-5.97-4.3 0-7.65 1.89-7.65 5.55.01 3.47 4.41 5.25 9.86 6.82"
+            class="st_logo letter"
+          />
+          <path
+            d="M14.87 123.04c0-36.82 18.51-69.39 46.71-88.94l52.77 196.76c-55.61-4.49-99.48-51.13-99.48-107.82m156.58-96.81-48.29 180.06-48.3-180.06c14.55-7.27 30.95-11.38 48.29-11.38s33.75 4.11 48.3 11.38m-39.49 204.63L184.73 34.1c26.29 18.22 44.15 47.76 46.45 81.51h14.9C242.22 51.21 188.57 0 123.16 0 55.25 0 0 55.19 0 123.04c0 67.84 55.25 123.04 123.16 123.04 65.41 0 119.07-51.21 122.93-115.61h-14.9c-3.65 53.29-46.07 96.1-99.23 100.39"
+            class="st_logo"
+          />
+        </svg>
+      </a>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
